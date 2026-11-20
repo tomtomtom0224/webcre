@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT要点暗記ノート</title>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>ITパス暗記ノート</h1>
+<!-- ノートの上部にボタンを配置 -->
+<div style="margin-bottom: 20px;">
+<button id="toggleBtn">すべての説明を表示</button>
+</div>
+
+<!-- 例：用語リスト構造 -->
+
+  <h2>1章</h2>
+<dl>
+<div class="item">
+      <dt>JPEG（.jpg）</dt>
+      <dd class="hidden">
+          写真向き（約1,677万色・グラデーションが得意）。非可逆圧縮で保存のたびにわずかに画質が劣化し、透過・アニメーションは非対応。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>PNG（.png）</dt>
+      <dd class="hidden">
+          ロゴ・イラスト・スクショ向き。可逆圧縮で画質が劣化せず、半透明（アルファチャンネル）の透過に対応。アニメーションは非対応。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>GIF（.gif）</dt>
+      <dd class="hidden">
+          最大256色までの単純なアイコンやパラパラ漫画のようなアニメーション向き。透過は「透明か不透明か」の2択のみ（半透明は不可）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>SVG（.svg）</dt>
+      <dd class="hidden">
+          XML形式で記述するベクター画像。どれだけ拡大・縮小しても輪郭がギザギザにならず、ロゴやアイコンに最適。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>WebP（.webp）</dt>
+      <dd class="hidden">
+          Google開発の次世代画像形式。高圧縮率で軽く、可逆・非可逆圧縮の両方、透過、アニメーションのすべてに対応。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>BMP（ビットマップ）</dt>
+      <dd class="hidden">
+          Windows標準の無圧縮画像形式。ファイルサイズが極めて重く、Webページでの表示には不向き（試験ではWebに不適な形式として出題）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>可逆圧縮と非可逆圧縮</dt>
+      <dd class="hidden">
+          可逆圧縮は元のデータに完全に復元でき劣化しない圧縮方式（PNG/GIF）。非可逆圧縮は人間の目に分かりにくい情報を削って軽くし、画質が劣化する圧縮方式（JPEG）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>ラスタ画像とベクタ画像</dt>
+      <dd class="hidden">
+          ラスタ画像（JPEG/PNG/GIF）はピクセル（点）の集合で表現され拡大すると荒れる。ベクタ画像（SVG）は数値と計算式で描画するため拡大しても荒れない。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>ベタ組み</dt>
+      <dd class="hidden">
+          文字間を詰めたり広げたりせず、フォント標準の枠のまま均等に並べる文字組み。日本語の長文（本文）に最適。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>ツメ組み（カーニング）</dt>
+      <dd class="hidden">
+          文字同士の間隔を詰めて見た目を引き締める手法。見出しやロゴなど短い文字の調整に向く。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>近接（Proximity）</dt>
+      <dd class="hidden">
+          関連する要素同士を近くに配置し、無関係な要素とは余白を空けてグループ化するレイアウト原則。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>整列（Alignment）</dt>
+      <dd class="hidden">
+          要素の左端・中央・右端などを「見えない基準線」に沿って揃え、画面に統一感を持たせる原則。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>対比（Contrast）</dt>
+      <dd class="hidden">
+          文字サイズ・太さ・色・余白などに大きな差をつけ、情報の優先度や強弱（メリハリ）を明確にする原則。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>反復（Repetition）</dt>
+      <dd class="hidden">
+          色・形・見出しデザイン・余白ルールなどを繰り返し使い、サイト全体に一貫性を持たせる原則。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>開閉（閉合 / Closure）</dt>
+      <dd class="hidden">
+          枠線や背景色、囲み線などで要素を囲む（閉じる）ことで、視覚的に1つのまとまりとして認識させる表現手法。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>黄金比（1 : 1.618）</dt>
+      <dd class="hidden">
+          西洋で最も美しいとされる比率（名刺やパルテノン神殿など）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>白銀比／大和比（1 : 1.414 ＝ 1 : √2）</dt>
+      <dd class="hidden">
+          日本建築（法隆寺など）やA4・B5用紙に使われる、日本人に馴染み深い安定した比率。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>和のシェイプ</dt>
+      <dd class="hidden">
+          畳（1:2）や障子など、日本の伝統的な造形や空間に見られる落ち着いた縦横比・プロポーション感覚。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>色相・明度・彩度（色の三属性）</dt>
+      <dd class="hidden">
+          色相は色味（赤・青など）、明度は明るさ、彩度は鮮やかさ。明度＋彩度を合わせた概念を「トーン（色調）」と呼ぶ。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>補色（反対色）</dt>
+      <dd class="hidden">
+          色相環で正反対に位置する色の組み合わせ。互いの色を引き立て、最もコントラストが強くなる。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>UI（ユーザーインターフェース）</dt>
+      <dd class="hidden">
+          画面のデザイン、ボタン配置、メニューなど、ユーザーとWebサイトの接点（見た目や操作画面）そのもの。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>UX（ユーザーエクスペリエンス）</dt>
+      <dd class="hidden">
+          サイトを通じてユーザーが得られる「使いやすい」「見つけやすい」「心地よい」といった体験全体の質。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>セレクターの優先順位（詳細度）</dt>
+      <dd class="hidden">
+          高い順に「インラインスタイル（style属性） ＞ ID（#id） ＞ クラス・属性・擬似クラス（.class等） ＞ タイプ（要素名）・擬似要素（p, ::before等） ＞ ユニバーサル（*）」。同点なら後に書いたものが勝つ。
+      </dd>
+      <table class="specificity-table">
+  <thead>
+    <tr>
+      <th>優先度<br>（点数目安）</th>
+      <th>セレクターの種類</th>
+      <th>記述例</th>
+      <th>特徴・試験のポイント</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>最優先（例外）</td>
+      <td><code>!important</code> 宣言</td>
+      <td><code>color: red !important;</code></td>
+      <td>点数に関係なく強制適用。保守性が下がるため乱用は避ける。</td>
+    </tr>
+    <tr>
+      <td>1000点</td>
+      <td>インラインスタイル</td>
+      <td><code>&lt;p style="color: red;"&gt;</code></td>
+      <td>HTMLタグの <code>style</code> 属性に直接書く指定。外部CSSより強い。</td>
+    </tr>
+    <tr>
+      <td>100点</td>
+      <td>IDセレクター</td>
+      <td><code>#main-title</code></td>
+      <td>1ページに1つ使うIDを指定。クラスや要素セレクターより優先される。</td>
+    </tr>
+    <tr>
+      <td>10点</td>
+      <td>クラスセレクター<br>属性セレクター<br>擬似クラス</td>
+      <td><code>.card</code><br><code>[type="text"]</code><br><code>:hover</code></td>
+      <td>複数要素に使い回せる定番。同じ10点同士なら後に書いた方が勝つ。</td>
+    </tr>
+    <tr>
+      <td>1点</td>
+      <td>タイプセレクター（要素名）<br>擬似要素</td>
+      <td><code>p</code>, <code>div</code>, <code>h1</code><br><code>::before</code>, <code>::after</code></td>
+      <td>HTMLタグ名や擬似要素を指定。基本のスタイル当てに使う。</td>
+    </tr>
+    <tr>
+      <td>0点</td>
+      <td>ユニバーサルセレクター</td>
+      <td><code>*</code></td>
+      <td>全要素を対象とする指定。リセットCSSなどで使われるが優先度は低い。</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+
+    <div class="item">
+      <dt>!important</dt>
+      <dd class="hidden">
+          プロパティ値の後ろに付けて詳細度のルールを強制的に上書きする最優先宣言（保守性が下がるため乱用厳禁）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>clearfix（クリアフィックス）</dt>
+      <dd class="hidden">
+          float を使った横並び配置で親要素の高さが0になる（高さ崩れ）のを防ぐ定番手法。::after 擬似要素に clear: both; を指定する。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>リセットCSSとノーマライズCSS</dt>
+      <dd class="hidden">
+          リセットCSSはブラウザ独自の初期余白や装飾をすべてゼロに打ち消す。ノーマライズCSSはブラウザ間の差異を揃えつつ便利な初期スタイルは残す。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>ボックスモデル</dt>
+      <dd class="hidden">
+          要素の領域を内側から順に content（内容）→ padding（内側余白）→ border（枠線）→ margin（外側余白）で構成する考え方。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>box-sizing: border-box;</dt>
+      <dd class="hidden">
+          指定した width や height の中に padding と border の幅を含める指定（レイアウト崩れ防止の定番）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>絶対単位と相対単位</dt>
+      <dd class="hidden">
+          絶対単位は他要素に左右されない固定値（px）。相対単位は親要素や画面サイズを基準に変化する値（%, em, rem, vw, vh）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>メディアクエリ（@media）</dt>
+      <dd class="hidden">
+          画面幅（ブレイクポイント）などの条件に応じて適用するCSSを切り替える仕組み。レスポンシブデザインを実現する。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>ビューポート（viewport）</dt>
+      <dd class="hidden">
+          スマホやPCなど各デバイスの画面における表示領域。&lt;meta name="viewport" ...&gt; で画面幅に合わせた表示を制御する。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>バリデート（Validate / 妥当性検証）</dt>
+      <dd class="hidden">
+          作成したHTMLやCSSのコードが、W3CなどのWeb標準の文法ルールに正しく準拠しているかチェックすること（実技試験の重要採点項目）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>セマンティックHTML</dt>
+      <dd class="hidden">
+          見た目ではなく「意味や役割」に合ったHTMLタグ（&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;footer&gt; など）を使うこと。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>アウトライン（文書構造）</dt>
+      <dd class="hidden">
+          &lt;h1&gt; 〜 &lt;h6&gt; の見出しタグを使って文書の階層構造を論理的に整理すること（見出しレベルの飛ばしは非推奨）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>alt属性（代替テキスト）</dt>
+      <dd class="hidden">
+          &lt;img&gt; タグで画像が表示できない場合や、音声読み上げソフトに画像の内容を伝えるテキスト。装飾目的の画像には空（alt=""）を指定する。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>Webアクセシビリティ</dt>
+      <dd class="hidden">
+          高齢者や障害の有無、利用環境に関わらず、誰もがWebサイトの情報や機能を利用できること。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>SEO（検索エンジン最適化）</dt>
+      <dd class="hidden">
+          検索結果で上位に表示されるよう、適切なタイトル・見出し構造・メタ情報・モバイル対応などを行う施策。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>文字コード（UTF-8）</dt>
+      <dd class="hidden">
+          Webページで文字化けを防ぐために指定する標準の文字エンコーディング方式（&lt;meta charset="UTF-8"&gt;）。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>相対パスと絶対パス</dt>
+      <dd class="hidden">
+          相対パスは現在のファイル位置を基準とした指定（./images/logo.png や ../index.html）。絶対パスは https://... から始まる完全なURL指定。
+      </dd>
+    </div>
+
+    <div class="item">
+      <dt>著作権とライセンス（CCライセンスなど）</dt>
+      <dd class="hidden">
+          他人の写真・イラスト・フォントには著作権があり無断使用はNG。クリエイティブ・コモンズ（CC）は作者が提示する条件の範囲内で利用できる仕組み。
+      </dd>
+    </div>
+  </div>
+</dl>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. 全体ボタンの設定
+    let isShowAll = false;
+    const btn = document.getElementById('toggleBtn');
+    
+    if (btn) {
+      // スマホのタッチとPCのクリックの両方に対応
+      const handleToggleAll = function(e) {
+        e.preventDefault(); // タップのズレやダブル発火を防止
+        const allDd = document.querySelectorAll('dd');
+        isShowAll = !isShowAll;
+
+        allDd.forEach(dd => {
+          if (isShowAll) {
+            dd.classList.remove('hidden');
+          } else {
+            dd.classList.add('hidden');
+          }
+        });
+
+        btn.textContent = isShowAll ? "すべての説明を隠す" : "すべての説明を表示";
+      };
+
+      btn.addEventListener('touchend', handleToggleAll, { passive: false });
+      btn.addEventListener('click', handleToggleAll);
+    }
+
+    // 2. 個別の用語（dt）の設定
+    const dts = document.querySelectorAll('dt');
+    dts.forEach(dt => {
+      const handleToggleDt = function(e) {
+        // 直後のddを取得してクラスを切り替え
+        const targetDd = this.nextElementSibling;
+        if (targetDd && targetDd.tagName === 'DD') {
+          targetDd.classList.toggle('hidden');
+        }
+      };
+
+      // スマホでのタップ対応
+      dt.addEventListener('click', handleToggleDt);
+    });
+
+  });
+</script>
+
+</body>
+</html>
